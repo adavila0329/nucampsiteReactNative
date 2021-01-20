@@ -19,8 +19,8 @@ class Contact extends Component {
         MailComposer.composeAsync({
             recipients: ['campsites@nucamp.co'],
             subject: 'Inquiry',
-            body: 'To whom it may concern: '
-        });
+            body: 'To whom it may concern:'
+        })
     }
 
     render() {
@@ -41,7 +41,7 @@ class Contact extends Component {
                             Email: campsites@nucamp.com
                         </Text>
                         <Button
-                            title= "Send Email"
+                            title="Send Email"
                             buttonStyle={{backgroundColor: '#5637DD', margin: 40}}
                             icon={<Icon
                                 name='envelope-o'
